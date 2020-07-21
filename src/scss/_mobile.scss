@@ -1,0 +1,22 @@
+.landscape-mobile {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $orange;
+  background: -webkit-linear-gradient(to left, $yellow, $orange);
+  background: linear-gradient(to left, $yellow, $orange);
+  display: none;
+}
+@media (max-width: 900px) and (orientation: landscape) {
+  .panel {
+    display: none;
+  }
+  .landscape-mobile {
+    display: flex;
+  }
+}

@@ -10,28 +10,115 @@ section {
   img {
     width: 80%;
     max-width: 700px;
+    border-radius: 50px;
   }
+}
+
+.hello {
+  background: $lightGreen;
+  background: -webkit-linear-gradient(to right, $olive, $lightGreen);
+  background: linear-gradient(to right, $olive, $lightGreen);
+}
+
+.birthday {
+  background: $skyBlue;
+  background: -webkit-linear-gradient(to top, $white, $lightBlue, $skyBlue);
+  background: linear-gradient(to top, $white, $lightBlue, $skyBlue);
+  img {
+    max-width: 380px;
+  }
+}
+
+.age {
+  background: $red;
+  background: -webkit-linear-gradient(to bottom, $darkRed, $red);
+  background: linear-gradient(to bottom, $darkRed, $red);
+  img {
+    max-width: 350px;
+  }
+}
+
+.entertainment {
+  background: $skyBlue;
+  background: -webkit-linear-gradient(to top, $white, $lightBlue, $skyBlue);
+  background: linear-gradient(to top, $white, $lightBlue, $skyBlue);
+}
+
+.movie {
+  background: #b79891;
+  background: -webkit-linear-gradient(to top, #94716b, #b79891);
+  background: linear-gradient(to top, #94716b, #b79891);
+  img {
+    max-width: 350px;
+  }
+}
+.dance {
+  background: $brown;
+  background: -webkit-linear-gradient(225deg, $darkGreen, $brown);
+  background: linear-gradient(225deg, $darkGreen, $brown);
 }
 
 .rollerblading {
   background: $pink;
   background: -webkit-linear-gradient(to right, $darkPink, $pink);
   background: linear-gradient(to right, $darkPink, $pink);
-  h2 {
-    color: $white;
-  }
   div {
     text-align: center;
     img {
       max-width: 380px;
       padding: 10px;
-      border-radius: 50px;
     }
   }
 }
 
+.lifeguard {
+  background: $water;
+  background: -webkit-linear-gradient(to right, $ligthPurple, $water);
+  background: linear-gradient(to right, $ligthPurple, $water);
+  div {
+    text-align: center;
+    img {
+      max-width: 380px;
+      padding: 10px;
+    }
+  }
+}
+
+.white-house {
+  background: $black;
+  background: -webkit-linear-gradient(to bottom, #434343, $black);
+  background: linear-gradient(to bottom, #434343, $black);
+}
+
+.food {
+  background: $yellow;
+  background: -webkit-linear-gradient(to top, $mango, $yellow);
+  background: linear-gradient(to top, $mango, $yellow);
+}
+
+.waiting {
+  background: #215f00;
+  background: -webkit-linear-gradient(to bottom, #e4e4d9, #215f00);
+  background: linear-gradient(to bottom, #e4e4d9, #215f00);
+  div {
+    text-align: center;
+    img {
+      max-width: 380px;
+      padding: 10px;
+    }
+  }
+}
+
+.distance {
+  background: $black;
+  background: -webkit-linear-gradient(225deg, $green, $black);
+  background: linear-gradient(225deg, $green, $black);
+}
+
 @media (max-width: 800px) {
-  .rollerblading {
+  .rollerblading,
+  .lifeguard,
+  .waiting {
     div {
       img {
         &:nth-child(2) {
@@ -39,5 +126,11 @@ section {
         }
       }
     }
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .subtitle {
+    font-size: 1rem;
   }
 }

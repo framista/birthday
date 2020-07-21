@@ -17,9 +17,25 @@ body {
   height: auto;
 }
 
-h2 {
+.title {
   font-size: 4rem;
   padding-bottom: 0.8em;
+  text-align: center;
+  &--white {
+    color: $white;
+  }
+  &--p {
+    padding-bottom: 0.2em;
+  }
+}
+
+.subtitle {
+  font-size: 2rem;
+  padding-bottom: 0.5em;
+  font-weight: 500;
+  text-align: center;
+  color: white;
 }
 
 @import 'panel.scss';
+@import 'mobile.scss';
