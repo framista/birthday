@@ -35,7 +35,30 @@ section {
   background: linear-gradient(to bottom, $darkRed, $red);
   img {
     max-width: 350px;
+    animation: age 2s linear infinite reverse;
   }
+}
+
+@keyframes age {
+  100% {
+    transform: scale(0) rotate(90deg);
+  }
+  66% {
+    transform: scale(0.3) rotate(180deg);
+  }
+  33% {
+    transform: scale(0.6) rotate(270deg);
+  }
+  10%,
+  0% {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+.date {
+  background: $lightPink;
+  background: -webkit-linear-gradient(to top, $whitePink, $lightPink);
+  background: linear-gradient(to top, $whitePink, $lightPink);
 }
 
 .entertainment {
@@ -56,6 +79,12 @@ section {
   background: $brown;
   background: -webkit-linear-gradient(225deg, $darkGreen, $brown);
   background: linear-gradient(225deg, $darkGreen, $brown);
+}
+
+.stretching {
+  background: $purple;
+  background: -webkit-linear-gradient(to top, $cream, $purple);
+  background: linear-gradient(to top, $cream, $purple);
 }
 
 .rollerblading {
@@ -115,6 +144,24 @@ section {
   background: linear-gradient(225deg, $green, $black);
 }
 
+.contact {
+  background: $lightWood;
+  background: -webkit-linear-gradient(to top, $wood, $lightWood);
+  background: linear-gradient(to top, $wood, $lightWood);
+  img {
+    max-width: 350px;
+  }
+}
+
+.mystery {
+  background: $violet;
+  background: -webkit-linear-gradient(to top, $lightViolet, $violet);
+  background: linear-gradient(to top, $lightViolet, $violet);
+  img {
+    max-width: 350px;
+  }
+}
+
 @media (max-width: 800px) {
   .rollerblading,
   .lifeguard,
@@ -129,8 +176,13 @@ section {
   }
   .title {
     font-size: 2rem;
+    padding: 1em;
+    &--p {
+      padding-bottom: 0em;
+    }
   }
   .subtitle {
     font-size: 1rem;
+    padding: 1em;
   }
 }
